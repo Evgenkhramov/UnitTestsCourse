@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/XUnit Course examples/.vs/ProjectEvaluation/xunit course examples.metadata.v9.bin
+/XUnit Course examples/.vs/ProjectEvaluation
+/XUnit Course examples/.vs/XUnit Course examples/CopilotIndices/17.13.439.2385
+/XUnit Course examples/.vs/XUnit Course examples/DesignTimeBuild
+/XUnit Course examples/.vs/XUnit Course examples/FileContentIndex
+/XUnit Course examples/.vs/XUnit Course examples/v17
