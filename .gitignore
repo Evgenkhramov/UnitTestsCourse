@@ -8,3 +8,10 @@
 /XUnit Course examples/.vs/XUnit Course examples/DesignTimeBuild
 /XUnit Course examples/.vs/XUnit Course examples/FileContentIndex
 /XUnit Course examples/.vs/XUnit Course examples/v17
+/TestOne/.vs
+/TestOne/Calculator/bin/Debug/net8.0
+/TestOne/Calculator/obj
+/TestOne/TestOne/bin/Debug/net8.0
+/TestOne/TestOne/obj
+/TestOne/XUnitV3ForCalculatorTests/bin/Debug/net8.0
+/TestOne/XUnitV3ForCalculatorTests/obj
