@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{0838EB12-AA62-479E-88B6-2A92097F6696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitV3ForCalculatorTests", "XUnitV3ForCalculatorTests\XUnitV3ForCalculatorTests.csproj", "{DB819B4F-3930-482B-A3F0-9C2DC454001F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0838EB12-AA62-479E-88B6-2A92097F6696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0838EB12-AA62-479E-88B6-2A92097F6696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0838EB12-AA62-479E-88B6-2A92097F6696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0838EB12-AA62-479E-88B6-2A92097F6696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0664EB2-3EEF-498D-9C06-8B4C84884C0B}
+	EndGlobalSection
+EndGlobal
