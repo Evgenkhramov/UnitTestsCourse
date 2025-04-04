@@ -35,4 +35,15 @@ public class NamesTest
         var result = names.FullName("John", "Doe");
         Assert.StartsWith("John", result);
     }
+
+    [Fact]
+    public void TestFullName_CreateClassNames_NickNameIsCorrect()
+    {
+        var names = new Names();
+        Assert.Null(names.NickName);
+
+        names.FullName("John", "Doe");
+        Assert.NotNull(names.NickName);
+        Assert.Equal("J+D", names.NickName);
+    }
 }
