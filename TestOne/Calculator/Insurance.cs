@@ -13,6 +13,8 @@ public class Insurance
             _ => throw new InvalidDataException(),
         };
     }
+
+    public int InterestRate => 10;
 }
 
 public class Customer(Insurance insurance, int age)

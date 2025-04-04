@@ -2,12 +2,14 @@
 
 namespace XUnitV3ForCalculatorTests;
 
-public class InsuranceTests
+[Collection("InsuranceTests")]
+public class InsuranceTests(InsuranceCollectionFixture insuranceCollectionFixture)
 {
+    private readonly InsuranceCollectionFixture _insuranceCollectionFixture = insuranceCollectionFixture;
     [Fact]
     public void TestDiscountPercentage_GivenAge18_ReturnBetweenFiveAndTwenty()
     {
-        var insurance = new Insurance();
+        var insurance = _insuranceCollectionFixture.Insureance;
         var result = insurance.DiscountPercentage(18);
         Assert.InRange(result, 5, 20);
     }
@@ -15,7 +17,7 @@ public class InsuranceTests
     [Fact]
     public void TestDiscountPercentage_GivenAgeBelow25_ReturnIs5()
     {
-        var insurance = new Insurance();
+        var insurance = _insuranceCollectionFixture.Insureance;
         var result = insurance.DiscountPercentage(24);
         Assert.Equal(5, result);
     }
@@ -23,14 +25,14 @@ public class InsuranceTests
     [Fact]
     public void TestDiscountPercentage_GivenAge6_ThrowException()
     {
-        var insurance = new Insurance();
+        var insurance = _insuranceCollectionFixture.Insureance;
         Assert.Throws<InvalidDataException>(() => insurance.DiscountPercentage(6));
     }
 
     [Fact]
     public void TestDiscountPercentage_GivenAge70_Return5()
     {
-        var insurance = new Insurance();
+        var insurance = _insuranceCollectionFixture.Insureance;
         var result = insurance.DiscountPercentage(70);
         Assert.Equal(5, result);
     }
