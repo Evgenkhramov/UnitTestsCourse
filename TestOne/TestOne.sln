@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitV3ForCalculatorTests", "XUnitV3ForCalculatorTests\XUnitV3ForCalculatorTests.csproj", "{DB819B4F-3930-482B-A3F0-9C2DC454001F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI", "MinimumAPI\MinimalAPI.csproj", "{C4CD7C44-DD01-4343-B37A-6264269C81CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalAPI.Test", "MinimumApi.Test\MinimalAPI.Test.csproj", "{DC35F3B1-14AF-4AAB-8032-914B45EC6D2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB819B4F-3930-482B-A3F0-9C2DC454001F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4CD7C44-DD01-4343-B37A-6264269C81CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4CD7C44-DD01-4343-B37A-6264269C81CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4CD7C44-DD01-4343-B37A-6264269C81CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4CD7C44-DD01-4343-B37A-6264269C81CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC35F3B1-14AF-4AAB-8032-914B45EC6D2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC35F3B1-14AF-4AAB-8032-914B45EC6D2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC35F3B1-14AF-4AAB-8032-914B45EC6D2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC35F3B1-14AF-4AAB-8032-914B45EC6D2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

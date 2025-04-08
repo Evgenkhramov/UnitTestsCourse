@@ -32,4 +32,9 @@ public class SimpleCalculator
             yield return first;
         }
     }
+
+    public static bool IsOdd(int number)
+    {
+        return number % 2 != 0;
+    }
 }

@@ -16,11 +16,35 @@ public class CalculatorTest(ITestOutputHelper testHelper, CalculatorFixture calc
     public void TestAdd_Given2And3_Return5()
     {
         _testOutputHelper.WriteLine("Add write line TestAdd_Given2And3_Return5");
- 
+
         var calculator = _calculatorFixture.Calculator;
         var result = calculator.Add(2, 3);
 
         Assert.Equal(5, result);
+    }
+
+    [Theory]
+    [MemberData(nameof(CalculatorTestDataShare.AddTestData), MemberType = typeof(CalculatorTestDataShare))]
+    public void Add_GivenTwoNumbers_ReturnResult(int a, int b, int expected)
+    {
+        var calculator = _calculatorFixture.Calculator;
+        var result = calculator.Add(a, b);
+
+        Assert.Equal(expected, result);
+    }
+
+    [Theory]
+    //[InlineData(0.2, 0.3, 0.5)]
+    //[InlineData(3.1, -4, -0.9)]
+    //[InlineData(500.5, 5, 505.5)]
+    //[MemberData(nameof(CalculatorTestDataShare.AddTestData), MemberType = typeof(CalculatorTestDataShare))]
+    [CalculatorAddData]
+    public void Add_GivenTwoDecimalNumbers_ReturnResult(decimal a, decimal b, decimal expected)
+    {
+        var calculator = _calculatorFixture.Calculator;
+        var result = calculator.Add(a, b);
+
+        Assert.Equal(expected, result);
     }
 
     [Fact, Trait("Category", "Calculator")]
